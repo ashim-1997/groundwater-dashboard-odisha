@@ -110,7 +110,7 @@ def load_data():
     # rain_path = r"D:\python_udemy_haris\PROJECTS\GW_Dashboard\data_odisha\Rainfall_odisha.xlsx"
     
     # This one to be used to upload on GITHUB
-    rain_path = "data_odisha\Rainfall_odisha.xlsx"
+    rain_path = "Rainfall_odisha.xlsx"
 
     if rain_path.endswith(".csv"):
         rain_df = pd.read_csv(rain_path)
