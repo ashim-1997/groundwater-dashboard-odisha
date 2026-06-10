@@ -346,7 +346,8 @@ def load_data():
 df, inactive_wells, df_original = load_data()
 
 # ----------Now loading the base wells for Boudh_Block for networking----------------
-df_wells = pd.read_csv(r"D:\python_udemy_haris\PROJECTS\GW_Dashboard\boudh_well_network.csv") 
+# df_wells = pd.read_csv(r"D:\python_udemy_haris\PROJECTS\GW_Dashboard\boudh_well_network.csv") 
+df_wells = pd.read_csv("boudh_well_network.csv")# For Github
 
 # ---------------- MASTER WELL TABLE (IMPORTANT FIX) ----------------
 well_master = df_original.drop_duplicates(subset=["Well_ID"]).copy()
