@@ -16,9 +16,9 @@ st.markdown("Web-based dashboard for groundwater monitoring and analysis")
 @st.cache_data
 def load_data():
     # Load Excel file
-    file_path = r"D:\python_udemy_haris\PROJECTS\GW_Dashboard\data_odisha\GW_levels_odisha.xlsx"
+    # file_path = r"D:\python_udemy_haris\PROJECTS\GW_Dashboard\data_odisha\GW_levels_odisha.xlsx"
     # This to be used to upload the file in GIT-HUB
-    # file_path = "data_odisha/GW_levels_odisha.xlsx" 
+    file_path = "data_odisha/GW_levels_odisha.xlsx" 
     
     if file_path.endswith(".csv"):
         df = pd.read_csv(file_path)
@@ -148,8 +148,8 @@ def load_data():
     df_long["Season"] = df_long["Season"].str.strip()
 
     # ---------------- Load Block-wise Rainfall Data ----------------
-    block_rain_path = r"D:\python_udemy_haris\PROJECTS\GW_Dashboard\data_odisha\Rainfall_long_format.xlsx"
-    # block_rain_path = "Rainfall_long_format.xlsx" # FOR GITHUB UPLOAD
+    # block_rain_path = r"D:\python_udemy_haris\PROJECTS\GW_Dashboard\data_odisha\Rainfall_long_format.xlsx"
+    block_rain_path = "Rainfall_long_format.xlsx" # FOR GITHUB UPLOAD
 
     block_rain_df = pd.read_excel(block_rain_path)
 
